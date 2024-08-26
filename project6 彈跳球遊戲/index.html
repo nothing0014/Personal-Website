@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>彈跳球</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #myCanvas {
+        background-color: black;
+      }
+      button {
+        display: block;
+        font-size: 1.5rem;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1000px" height="600px"></canvas>
+    <script src="./app.js"></script>
+    <button type="button" id="refresh" onClick="window.location.reload()">
+      重新開始
+    </button>
+  </body>
+</html>

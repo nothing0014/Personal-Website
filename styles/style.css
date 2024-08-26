@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+body nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+}
+body nav ul {
+  display: flex;
+}
+body nav ul li {
+  list-style: none;
+  margin: 1rem;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+body nav ul li a:hover {
+  color: rgba(9, 165, 238, 0.5);
+}
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body main section.main-area div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+body main section.main-area div.info h1 {
+  font-size: 3rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1.25rem;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: rgba(9, 165, 238, 0.5);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.main-area div.image-area {
+  flex-basis: 375px;
+}
+body main section.main-area div.image-area img {
+  width: 100%;
+}
+body main section.about-me {
+  background-color: rgba(116, 241, 183, 0.5);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main section.about-me section.description {
+  text-align: center;
+}
+body main section.about-me section.description h2 {
+  font-size: 2rem;
+}
+body main section.about-me section.description div.progress-bar-area {
+  width: 50vw;
+  margin: 2rem;
+}
+body
+  main
+  section.about-me
+  section.description
+  div.progress-bar-area
+  div.progress {
+  margin-bottom: 2rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+body main section.resume section.table {
+  flex: 5 0 500px;
+  padding: 2rem;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+  --bs-table-bg: none;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgb(154, 255, 222);
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.picture {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body main section.resume section.picture img {
+  width: 80%;
+}
+body main section.resume div.greenRect {
+  width: 30vw;
+  height: 90vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  z-index: -1;
+}
+body main section.resume div.greenRect2 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 300px;
+  left: -300px;
+  z-index: -1;
+}
+body main section.resume div.greenRect3 {
+  width: 50vw;
+  height: 40vh;
+  border: 10px solid rgb(195, 255, 200);
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  z-index: -2;
+}
+
+@media screen and (max-width: 800px) {
+  body main section.abput-me section.description {
+    width: 80%;
+  }
+  body main section.resume {
+    overflow-x: auto;
+  }
+  body main section.resume section.picture div.greenRect,
+  body main section.resume section.picture div.greenRect2,
+  body main section.resume section.picture div.greenRect3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body nav {
+    position: static;
+  }
+  body nav ul {
+    flex-direction: column;
+  }
+} /*# sourceMappingURL=style.css.map */
